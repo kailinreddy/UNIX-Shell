@@ -28,4 +28,4 @@ exit 0
 # "0" means the program has executed 
 
 # Save the file and grant it execute permissions: chmod +x <file> c) 
-Run the file: ./<file>
+#Run the file: ./<file>
