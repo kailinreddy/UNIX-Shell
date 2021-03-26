@@ -1,0 +1,31 @@
+#!/bin/sh
+# Script to print user info clear
+
+echo "Hello $USER"
+# Prints out username of person currently using the shell
+
+echo -n "Number of logins: "; who|wc -l
+# -n : omit echoing trailing newline
+# who : find 1) Time of last system boot, 2)Current runlevel of the system,
+#       3)List of logged in users
+# wc : stands for word count. Used to find the number of lines, word count,
+#     byte and character countin the files arguments.
+# -l : prints the number of lines present in the file.
+# vertical bar (|) : referred to as a "pipe". It is used to direct the
+#                    output from the first command into the second command.
+# who|wc -l : In this case, this command provides a list of logged in users,
+#             then counts the lines of that list, outputing a number.
+#             This counts the number of logins done.
+
+echo "Calender"; cal
+#Displays the system calender highlighting the current day.
+
+echo -n "Today is "; date
+# Displays the current date, time and timezone.
+
+exit 0
+# exit : used to exit the shell where it is currently running.
+# "0" means the program has executed 
+
+# Save the file and grant it execute permissions: chmod +x <file> c) 
+Run the file: ./<file>
